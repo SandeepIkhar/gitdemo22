@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="child component">
+   <lightning-button label="Addition" icon-name="utility:add" onclick={addhandel}></lightning-button>
+   <lightning-button label="Substration" icon-name="utility:sub" onclick={subhandel}></lightning-button>
+   <lightning-button label="2"  icon-name="utility:close" onclick={handelmultiply1}></lightning-button>
+   <lightning-button label="10"  icon-name="utility:close" onclick={handelmultiply2}></lightning-button>
+   <lightning-input label="Enter value" value={num} onchange={handelinput}></lightning-input>
+ 
+   <div class="slds-var-m-horizontal_xx-small slds-var-m-bottom_x-small">
+       <p>Message From Parent:</p>
+   
+       <p>{messageFromParent}</p>
+   </div>
+    </lightning-card>   
+   </template>

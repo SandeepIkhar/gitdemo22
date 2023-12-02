@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title = "Getter Setter Mechanism" icon-name="utility:bucket">          
+        <lightning-layout>          
+                <lightning-layout-item flexibility="auto" padding="around-small">               
+                     
+<div class="padding-around:small">
+                        <lightning-input label="Message" value={message} onchange={handleMessage}></lightning-input>
+                    </div>
+ 
+                     
+<div class="padding-around:small slds-m-top_small">
+                        <lightning-formatted-text value={outputMessage} ></lightning-formatted-text>
+                    </div>
+ 
+                </lightning-layout-item>         
+        </lightning-layout>
+    </lightning-card>
+    <div>
+        <h1>Account Balance Tracker</h1>
+        <p>Account Balance: $ {balance}</p>
+        <lightning-input label="Amount" type="number" step="0.01" onchange={handleAmountChange}></lightning-input>
+        <lightning-button label="Add" onclick={addFunds}></lightning-button>
+        <lightning-button label="Subtract" onclick={subtractFunds}></lightning-button>
+    </div>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Parent component">
+        
+       <p>count:{counter}</p>
+       <lightning-input label="Message" value={messageToChild} onchange={handleChange}></lightning-input>
+    </lightning-card>
+<c-child-to-parent2 onsub={handeldecrement} onadd={handelincrement} onm1={handleMultiply1} onm2={handleMultiply2}
+   onm3={handelin}  message-from-parent={messageToChild} ></c-child-to-parent2 >
+
+</template>

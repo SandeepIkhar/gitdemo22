@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<template>
+  <lightning-card>
+    <lightning-input label="value1" value={value1} onchange={handelchange}></lightning-input>
+    <lightning-input label="value2" value={value2} onchange={handelchange}></lightning-input>
+    <lightning-input label="value3" value={value3} onchange={handelchange}></lightning-input>
+    <lightning-button label="total sume" onclick={handelclick}></lightning-button>
+    <div class="result">
+        Total:{total}
+    </div>
+  </lightning-card>  
+</template>

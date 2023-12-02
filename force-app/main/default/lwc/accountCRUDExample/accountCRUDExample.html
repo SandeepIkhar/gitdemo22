@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Account Manager">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Account Name" value={accountName} onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Phone" value={accountPhone} onchange={handlePhoneChange}></lightning-input>
+            <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+        </div>
+    </lightning-card>
+    <lightning-card title="Account List">
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={accounts}
+                columns={columns}
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

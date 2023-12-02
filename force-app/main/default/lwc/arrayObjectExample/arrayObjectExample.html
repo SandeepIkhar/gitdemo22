@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <div>
+            <h2>Task List:</h2>
+            <ul>
+                <template for:each={tasks} for:item="task" for:index="index">
+                    <li key={task.id}>
+                        <span >{task.title}</span>
+                        <lightning-button label="Complete" onclick={handleCompleteTask} data-index={index} disabled={task.completed}></lightning-button>
+                        <lightning-button label="Delete" onclick={handleDeleteTask} data-index={index}></lightning-button>
+                    </li>
+                </template>
+</ul>
+<lightning-input label="New Task" onchange={handleTaskChange} value={newTask}></lightning-input>
+<lightning-button label="Add Task" onclick={addTask}></lightning-button>
+</div>
+</lightning-card>
+</template>

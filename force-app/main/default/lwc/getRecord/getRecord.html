@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_medium">
+        <!-- Display the Account Name -->
+        <div>
+            <p>Account Name: {accountName}</p>
+        </div>
+        
+        <!-- Edit Form (You can replace this with your own form) -->
+        <lightning-input label="New Account Name" value={newAccountName} onchange={handleNameChange}></lightning-input>
+        
+        <!-- Button to Edit and Navigate -->
+        <lightning-button label="Edit and Go to Detail" onclick={handleEditAndNavigate}></lightning-button>
+    </div>
+</template>

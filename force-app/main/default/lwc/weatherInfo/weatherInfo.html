@@ -1,0 +1,37 @@
+<template>
+    
+    <lightning-card title="Temperature Information"  >
+        <div class="slds-m-around_medium" >
+            <lightning-combobox
+            name="city"
+            label="Enter city"
+            value={city}
+            placeholder="select city"
+            options={cities}
+            onchange={handleCity} ></lightning-combobox>
+        </div>
+    <lightning-layout multiple-rows  >
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+            <div class="custom-box text"><strong>{location.name}</strong></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+            <div class="custom-box text"><strong>{location.country}</strong></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+            <div class="custom-box text"><strong>{current.temp_c}° c</strong></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+            <div class="custom-box text"><strong>{current.temp_f}° f
+            
+            </strong></div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="2">
+            <div class="custom-box text"><strong>{condition.text}
+                <img src={condition.icon} alt="image"/>
+            </strong></div>
+        </lightning-layout-item>
+
+    </lightning-layout>
+</lightning-card> 
+
+</template>

@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box1 {
+    width: 400px;
+    height: 600px;
+    background-color: #e5e1d6;
+}
+
+.box2 {
+    width: 700px;
+    height: 600px;
+}
+
+.custom-icon-container {
+    width: 40px;
+    /* Adjust this value to your preferred size */
+    height: 40px;
+    /* Adjust this value to your preferred size */
+    border-radius: 50%;
+    /* Make the container round */
+    background-color: skyblue;
+    /* Set the background color to blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 700px;
+    height: 150px;
+    background-color: white;
+    justify-content: center;
+}
+
+.box3 {
+    width: 150px;
+    height: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.centered-div {
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    /* Adjust this value as needed for spacing between links */
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

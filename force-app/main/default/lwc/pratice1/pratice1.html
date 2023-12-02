@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <!-- <h2>Account List</h2> 
+        <lightning-button label="click" onclick={handelclick}></lightning-button>
+        <ul>
+            <template for:each={accounts} for:item="account">
+                <li key={account.Id}>{account.Name}</li>
+            </template>
+</ul>-->
+<div>
+    <h1>Create New Account</h1>
+    <lightning-input label="Account Name" value={accountName} onchange={handleAccountNameChange}></lightning-input>
+    <lightning-input label="Industry" value={industry} onchange={handleIndustryChange}></lightning-input>
+    <lightning-button label="Create Account" onclick={createAccount}></lightning-button>
+</div>
+<template for:each={createdAccounts} for:item="account">
+    <li key={account.Id}><a onclick={dclick} data-id={account.id}>: {account.Name}  Indusrty: {account.Industry} </a></li>
+</template>
+</div>
+</template>

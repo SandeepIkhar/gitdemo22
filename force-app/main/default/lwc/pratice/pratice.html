@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="File Uploader">
+        <div class="slds-p-around_medium">
+            <lightning-input type="file" label="Choose file" accept=".jpg, .jpeg, .png" onchange={handleFileChange}></lightning-input>
+            <lightning-input type="text" label="Record Id" value={recordId} onchange={handleRecordIdChange}></lightning-input>
+            <lightning-button label="Upload File" variant="brand" onclick={uploadFile}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

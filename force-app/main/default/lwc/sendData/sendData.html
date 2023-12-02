@@ -1,0 +1,23 @@
+<template>
+    
+    <lightning-card title="Parent Component">
+        
+        <div class="slds-p-around_medium">
+            <lightning-input label="Account Name" value={accountName} onchange={handleAccountNameChange}></lightning-input><br/>
+            <lightning-input label="Contact Name" value={contactName} onchange={handleContactNameChange}></lightning-input><br/>
+            <lightning-button label="Create Account and Contact" variant="brand" onclick={createAccountAndContact}></lightning-button><br/>
+        </div>
+      
+</lightning-card>
+<lightning-card title="Received Data Using Message Channel for Unrelated LWC Component">
+    <div class="slds-m-around_medium">
+        <template if:true={receivedData}>
+            <div for:each={receivedData} for:item="item" key={item.key}>
+                <p key={item.key}>Account Name: {item.value}</p>
+                <p key={item.key}>Contact  Name: {item.value1}</p>
+            </div>
+        </template>
+</div>
+</lightning-card>
+
+</template>

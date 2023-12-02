@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<template>
+    <lightning-card title="Parent">
+        <p>custom label:{customlabel} </p>
+   <p>count:{count}</p>
+   <lightning-input label="Enter name" value={nam} onchange={handelchange}></lightning-input>
+    </lightning-card>
+    <c-child ona={handeladd} ons={handelsub} parentname={nam}></c-child>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-box" style="width:50%; height: 500Px; background-color: white; border: 0vmin;">
+        <label class="slds-form-element__label" for="search-input"></label>
+        
+            <lightning-input label="Search Account" onchange={handleSearchChange}></lightning-input>
+        
+       <template for:each={accountResults} for:item="account" if:true={showResults}>
+                <li key={account.Id}>
+                    <a href=" " onclick={handleAccountClick} data-id={account.Id}>
+                        {account.Name}
+                    </a>
+                </li>
+            </template>
+
+<template for:each={relatedContacts} for:item="contact" if:true={selectedAccount}>
+   
+      <li key={contact.Id} class="slds-item">
+        <a href=" " onclick={handlecontactClick} data-id={contact.Id}>
+                   Last Name:  {contact.LastName}
+                    </a>
+                </li>
+            </template>
+</div>
+
+</template>

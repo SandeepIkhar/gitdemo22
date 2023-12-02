@@ -1,0 +1,13 @@
+<template>
+    <lightning-card> 
+    
+        <template for:each={acc} for:item="a">
+        <li key={a.id}>
+             Name: {a.name}
+             Age :{a.age}
+        </li>
+
+        </template>
+
+</lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-box" style="background-color: whitesmoke;" >
+        <div class="slds-p-around_medium">
+            <lightning-input label="New Task" value={newTask} onchange={handleTaskChange}></lightning-input>
+            <button onclick={addTask} style=" background-color: yellow; width:75px; height:40px; border-radius:5px"> Add Task</button>
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error">{errorMessage}</div>
+            </template>
+</div>
+<template for:each={tasks} for:item="task">
+            <div key={task.id} class="slds-p-around_medium">
+                {task.name}
+                <lightning-button-icon icon-name="utility:delete" onclick={handleDeleteTask} data-id={task.id} style="background-color: red;"></lightning-button-icon>
+                
+            </div>
+        </template>
+</div>
+</template>

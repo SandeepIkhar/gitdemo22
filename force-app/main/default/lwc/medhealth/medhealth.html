@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<template>
+
+    <form style="background-color: white; height: 1000px;">
+
+        <div class="box">
+         <h6>The Mediclinic Health Library</h6>
+    </div></br>
+    <h3>Discover a world of health wisdom with The Mediclinic Health Library. Your one-stop resource for accurate and up-to-date information on a myriad of conditions and diseases. Dive deeper with related articles, videos, and more - all at your fingertips.</h3> </br>
+    <h4>Register now for FREE, unlock the potential of cutting-edge health knowledge, and take the driver's seat in your healthcare journey. Empower your wellness today!</h4>
+   <div class="box1">
+    <lightning-card title="Login" style="padding-left: 20px;padding-right:300px" >
+        <p>Please enter your email address and password to log in.</p>
+        <div class="slds-p-around_medium">
+            <lightning-input label="Username" value={username} onchange={handleUsernameChange}></lightning-input>
+            <lightning-input type="password" label="Password" value={password} onchange={handlePasswordChange}></lightning-input>
+            <lightning-button variant="brand" label="Login" title="Login" onclick={handleLogin}></lightning-button>
+        </div>
+        <div class="slds-p-top_medium">
+            <a onclick={handleForgotPasswordClick}>Forgot Password?</a>
+        </div>
+        <div class="slds-p-top_medium">
+            <a onclick={handleRegisterClick}>Register</a>
+        </div>
+    </lightning-card>
+</div>
+
+</form>
+    
+</template>

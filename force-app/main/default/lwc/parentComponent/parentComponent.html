@@ -1,0 +1,7 @@
+<template>
+   <lightning-card title="parent">
+   <lightning-input label="enter name" value={myvalue} onchange={handelchange}></lightning-input>
+   <p>Message from Child: {messageFromChild}</p>
+   </lightning-card>
+   <c-child-component nam={myvalue}  onnotifyparent={handleChildNotification}></c-child-component>
+</template>

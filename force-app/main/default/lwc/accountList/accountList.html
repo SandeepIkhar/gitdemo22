@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<template>
+    <lightning-card title="Account List">
+        <div class="slds-m-around_medium">
+          
+                <ul>
+                    <template for:each={accounts} for:item="account" >
+                        <li key={account.Id} data-id={account.Id} onclick={handleCategoryClick}>{account.Name}</li>
+                    </template>
+</ul><template lwc:if></template>
+
+</div>
+</lightning-card>
+</template>

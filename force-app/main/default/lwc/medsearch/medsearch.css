@@ -1,0 +1,37 @@
+.container1 {
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.custom-icon-container {
+    width: 40px;
+    /* Adjust this value to your preferred size */
+    height: 40px;
+    /* Adjust this value to your preferred size */
+    border-radius: 50%;
+    /* Make the container round */
+    background-color: skyblue;
+    /* Set the background color to blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    width: 150px;
+    height: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}

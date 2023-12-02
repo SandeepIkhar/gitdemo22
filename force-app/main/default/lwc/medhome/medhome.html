@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<template>
+<form style="background-color:white;">
+    <header style="background-color:white;">
+          <img src="/resource/1690358777000/logo" style="padding-left: 40px;" onclick={logo} >
+        <div class="content" >
+            <a href=""><img src="/resource/1690363562000/dcotorlogo" > <span>Doctor Opportunities</span></a>
+            <a href=""><img src="/resource/1690363736000/Careerlogo?" > <span>Career</span></a>&nbsp;
+            <a href=""><img src="/resource/1690363915000/highereducation?" > <span>Higher Education</span></a>&nbsp;
+            <a href=""><img src="/resource/1690361739000/contact?" > <span>Contact</span></a>
+        </div>
+        
+   
+
+             <div class="container1">
+             <div class="box2">
+              <div class="center-container"  >
+                <a ><img src="/resource/1690364730000/Hospitallogo?" > <span onclick={handelhospital}>Hospitals</span></a>
+                <a ><img src="/resource/1690365493000/dcotolog?" > <span onclick={handeldoctor}>Doctors</span></a> &nbsp;
+                <a ><img src="/resource/1690365133000/librarylogo?" > <span onclick={handelhealth}>Health Library</span></a>
+                <a ><img src="/resource/1690365223000/specialistlogo?" > <span onclick={handelspeciality}>Specialities</span></a>
+                <a ><img src="/resource/1690365320000/instituelogo?" > <span onclick={handelinstitute}>Specialist Institute</span></a>
+                </div>
+               
+            </div>
+            <div class="icon">
+            <div class="custom-icon-container" >
+              <lightning-icon icon-name="utility:search" onclick={handelser}></lightning-icon>
+              </div>
+             
+               <div class="custom-icon-container" >
+                 <lightning-icon icon-name="utility:rows" onclick={utilityrows}></lightning-icon>
+                 </div>
+                </div> 
+          </div>
+            
+    </header> </br>
+    <template if:true={child1}>
+    <c-medhospital></c-medhospital>
+  </template>
+<template if:true={child2}>
+    <c-meddoctor></c-meddoctor>
+  </template>
+<template if:true={child3}>
+    <c-medhealth></c-medhealth>
+  </template>
+<template if:true={child4}>
+    <c-medspecilaist></c-medspecilaist>
+  </template>
+
+
+<template if:true={hospital}>
+      <div>
+           <div>
+           
+           <img src="/resource/1690380581000/backround1" >
+        </div>
+        <div class="container">
+            <div class="box">
+               
+              <lightning-input type="search" placeholder="keyword...."  > </lightning-input>  
+              <div class="horizontal-menu">
+                <a href="" class="box1">Hospitals & Day Clinics</a>
+                <a href="" class="box1">Doctors</a>
+                <a href="" class="box1">Online Pre-Admission</a>
+                <a href="" class="box1">Careers</a>
+                <a href="" class="box1">Higher Education</a>
+                <a href="" class="box1">Doctor Opportunities</a>
+              </div>
+             </div>
+         </div>
+       </div> </br>
+
+       <div>
+       <lightning-carousel>
+        <lightning-carousel-image
+            src="/resource/1690426564000/caro3?" ></lightning-carousel-image>
+        <lightning-carousel-image
+            src="/resource/1690426591000/caro4?" >  </lightning-carousel-image>
+        <lightning-carousel-image
+            src="/resource/1690426620000/caro5?"  > </lightning-carousel-image>
+            <lightning-carousel-image
+            src="/resource/1690426644000/caro6?" ></lightning-carousel-image>
+        <lightning-carousel-image
+            src="/resource/1690426450000/caro1" >  </lightning-carousel-image>
+        <lightning-carousel-image
+            src="/resource/1690426473000/caro2?"  > </lightning-carousel-image>
+    </lightning-carousel>
+  </div>
+</br>
+  <div>
+ <P style="font-size: 30px;padding-right :20px;padding-left:20px ">Mediclinic Southern Africa operates a range of multi-disciplinary acute care private hospitals in South Africa and Namibia and focuses on providing value to our patients through safe, quality care in a patient friendly environment.
+</P>
+  </div> </br>
+
+  <div class="container2">
+
+    <div class="box3">
+    <div style="text-align: center;">
+      <a href="">  <span style="font-size: 35px; font-weight: bold;">Online Pre-Admission</span> </a>
+      </div>
+       </div>
+
+    <div class="box3">
+      <div style="text-align: center;">
+        <a href="">  <span style="font-size: 35px; font-weight: bold;">Inclusion, Partnerships & Transformation
+        </span></a>
+      </div>
+       </div>
+
+    </div> </br>
+
+    <div class="container2">
+<div class="box4">
+  <lightning-tabset >
+    <lightning-tab label="Services" style="background-color:#AADDEC;">
+    <a href=""> <h5>  Mediclinic Precise </h5> </br> </a> 
+    <a href=""> <h5>  Mediclinic Renal Services </h5> </br> </a> 
+    <a href="">  <h5>  Mediclinic Mental Health Services</h5> </br></a> 
+    <a href="">  <h5> Mediclinic Baby</h5> </br></a> 
+    <a href="">  <h5> Mediclinic Prime</h5> </a>   
+    </lightning-tab>
+    <lightning-tab label="Products" style="background-color:#AADDEC;">
+      <a href="">  <h5> Mediclinic Private Fixed Fees</h5> </br></a> 
+      <a href="">  <h5> Care Expert </h5> </br></a> 
+      <a href=""> <h5>  Financing Options </h5> </br></a> 
+      <a href=""> <h5> Ancestry Testing </h5></br> </a> 
+      <a href=""> <h5>  Panorama Non-Invasive Prenatal Testing (NIPT)</h5> </br></a> 
+      <a href="">  <h5> Pharmacogenetics </h5> </a> 
+    </lightning-tab>
+    <lightning-tab label="Health Info & Resources" style="background-color:#AADDEC;">
+      <a href=""> <h5> Health Knowledge Library </h5> </br></a> 
+      <a href=""> <h5> Mediclinic Family Magazine </h5> </br></a> 
+      <a href=""> <h5>  The Mediclinic Info Hub Blog </h5> </br></a> 
+      <a href=""> <h5>The Future of Healthcare Blog</h5></a>  
+    </lightning-tab>
+</lightning-tabset>
+    </div>
+    </div> 
+  </br>
+
+    <div class="box5"> 
+      <span style="font-size: 25px;">Our Affiliates</span>
+      <div class="container2">
+        <div class="box6">
+       <a href="https://www.er24.co.za/en/corporate/home.html"> <img src="https://mediclinic.scene7.com/is/image/mediclinic/ER24-teaser?_ck=1618991796703&wid=768&dpr=off"> </a>
+        </div>
+        <div class="box6">
+          <a href="https://www.intercare.co.za/"> <img src="https://mediclinic.scene7.com/is/image/mediclinic/Intercare-teaser?_ck=1618327521778&wid=768&dpr=off"> </a>
+        </div>
+        <div class="box6">
+          <a href="https://www.mhr.co.za/en/corporate/home.html"> <img src="https://mediclinic.scene7.com/is/image/mediclinic/MHR-teaser?_ck=1618327666202&wid=768&dpr=off"> </a>
+        </div>
+        <div class="box6">
+          <a href="https://www.medicalinnovations.co.za/"> <img src="https://mediclinic.scene7.com/is/image/mediclinic/Medical-Innovations-teaser?_ck=1618327590374&wid=768&dpr=off"> </a>
+        </div>
+      </div>
+    </div> </br>
+
+
+    
+    <div class="box7"> 
+  
+      <div class="container2">
+        <div class="box8">
+         <strong><span>MEDICLINIC SOUTHERN AFRICA</span></strong>  </br>
+          <P>Mediclinic Southern Africa operates a range of multi-disciplinary acute care private hospitals in South Africa and Namibia and focuses on providing value to our patients through safe, quality care in a patient friendly environment.</P>
+        </div>
+        <div class="box8">
+          <span> Follow Us</span> </br>
+          <a href="https://www.facebook.com/MediclinicSouthernAfrica/">Facebook</a>&NonBreakingSpace;&NonBreakingSpace;
+          &NonBreakingSpace;
+          <a href="https://www.instagram.com/mediclinicsouthernafrica/">Instagram</a>
+        </div>
+       
+      </div>
+    </div> 
+    <footer>
+      <div class="box9"> 
+        
+        <div class="container2">
+          <div class="box10">
+        <img src="https://www.mediclinic.co.za/content/dam/mc-me-corporate/logos/re-design/logo-mediclinic-web.png">
+          <div class="emer"> Emergency Number</div>
+          <a href="https://www.mediclinic.co.za/en/corporate/tel:084%20124" style="font-size: 24px; font-weight: bold; color: red;">084 121</a>
+         </div>
+          <div class="box10">
+            <strong>Quick Links</strong></br>
+            <a href="" style="color: black;"> Hospital Locator</br></a>
+            <a href="" style="color: black;"> Online Pre_Admission</br></a>
+            <a href="" style="color: black;"> Mediclinic Baby</br></a>
+            <a href="" style="color: black;"> Care Expert</a>
+          </div>
+          <div class="box10">
+            <strong>Doctor Opportunities</strong></br>
+            <a href="" style="color: black;"> Pratice Opportunities</br></a>
+            <a href="" style="color: black;"> Why Partner With Us</br></a>
+            <a href="" style="color: black;"> Registrar Programme</br></a>
+            <a href="" style="color: black;"> bursary Programme</a>
+          </div>
+          <div class="box10">
+            <strong>Career</strong></br>
+            <a href="" style="color: black;"> How To Apply</br></a>
+            <a href="" style="color: black;"> Search for Opportunities</br></a>
+            <a href="" style="color: black;"> Testimonial</a>
+          </div>
+          <div class="box10">
+            <strong>Higher Education</strong></br>
+            <a href="" style="color: black;">Log in/Sing up</br></a>
+            <a href="" style="color: black;"> Programme/Course</br></a>
+            <a href="" style="color: black;"> Information</br></a>
+            <a href="" style="color: black;"> Short Course</a>
+          </div>
+        </div>
+      </div>
+      <span>© Mediclinic Southern Africa 2023
+        Terms of Use
+        Cookie Policy
+        Access to Information Manual
+        Website Privacy Statement
+        Patient Privacy Notice
+        Doctor & Allied Healthcare Professionals Privacy Notice</span></br>
+        <a href="">Contact Us</a>
+    </footer>
+  </template>
+</form>
+</template>

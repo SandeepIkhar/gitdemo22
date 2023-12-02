@@ -1,0 +1,195 @@
+                .center-container {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .content {
+                    float: right;
+                    margin-right: 140px;
+                }
+                /* Replace the container class name with your preferred class name */
+                
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    cursor: pointer;
+                }
+                
+                .custom-icon-container {
+                    width: 40px;
+                    /* Adjust this value to your preferred size */
+                    height: 40px;
+                    /* Adjust this value to your preferred size */
+                    border-radius: 50%;
+                    /* Make the container round */
+                    background-color: skyblue;
+                    /* Set the background color to blue */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .custom-icon-container lightning-icon {
+                    color: white;
+                    .large-text {
+                        width: 100%;
+                        /* You can adjust this percentage to your desired width */
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                
+                .center-left {
+                    text-align: left;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .large-bold {
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+                
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* Optional: This ensures the container takes the full viewport height. Adjust as needed. */
+                }
+                
+                .box {
+                    width: 700px;
+                    height: 150px;
+                    border: 2px solid black;
+                    background-color: #f0f0f0;
+                    justify-content: center;
+                }
+                
+                .custom-label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .custom-label .slds-form-element__label {
+                    color: blue;
+                    padding-right: 10px;
+                }
+                /* Custom CSS for the input */
+                
+                .custom-input {
+                    flex: 1;
+                }
+                
+                .box1 {
+                    width: 150px;
+                    height: 50;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                }
+                
+                .horizontal-menu {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                /* Display the links horizontally */
+                
+                .horizontal-menu a {
+                    display: inline-block;
+                    margin-right: 10px;
+                    /* Add some spacing between the links */
+                    text-decoration: none;
+                    /* Remove the default underline */
+                }
+                
+                .container1 {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    height: 100%;
+                    padding-right: 120px;
+                }
+                /* Set the dimensions and style of the box */
+                
+                .box2 {
+                    width: 1000px;
+                    height: 100px;
+                    background-color: white;
+                }
+                
+                .container2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                /* Set the dimensions and style of the box */
+                
+                .box3 {
+                    width: 700px;
+                    height: 100px;
+                    background-color: skyblue;
+                    border: 1px solid skyblue;
+                }
+                
+                .box4 {
+                    width: 1400px;
+                    height: 250px;
+                }
+                
+                .box5 {
+                    width: 1400px;
+                    height: 250px;
+                    background-color: #EEEEEE;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                
+                .box6 {
+                    width: 200px;
+                    height: 140px;
+                    background-color: white;
+                }
+                
+                .box7 {
+                    width: 1400px;
+                    height: 250px;
+                    background-color: white;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 50px;
+                }
+                
+                .box8 {
+                    width: 250px;
+                    height: 100px;
+                    background-color: white;
+                }
+                
+                .box9 {
+                    width: 1340px;
+                    height: 150px;
+                    background-color: white;
+                    border: 1px solid black;
+                }
+                
+                .box10 {
+                    width: 200px;
+                    height: 140px;
+                    background-color: white;
+                }
+                
+                .emer {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #f43a11;
+                    font-weight: 700;
+                }
